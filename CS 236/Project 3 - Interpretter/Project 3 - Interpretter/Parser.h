@@ -20,6 +20,7 @@ public:
 	Parser(char* filename);
 	~Parser();
 
+	DatalogProgram getDP();
 	void parse();
 	string toString();
 	void datalogProgram();

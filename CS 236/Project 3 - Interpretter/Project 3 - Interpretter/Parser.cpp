@@ -28,6 +28,10 @@ Parser::~Parser()
 {
 }
 
+DatalogProgram Parser::getDP(){
+	return dp;
+}
+
 void Parser::parse(){
 	try {
 		datalogProgram();
