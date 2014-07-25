@@ -1,0 +1,43 @@
+﻿Build started 7/25/2014 12:00:41 AM.
+     1>Project "C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Project 3 - Interpretter\Project 3 - Interpretter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DatalogProgram.cpp main.cpp Parameter.cpp Parser.cpp Predicate.cpp Rule.cpp Scanner.cpp Token.cpp Tokentype.cpp Util.cpp
+         Util.cpp
+         Tokentype.cpp
+         Token.cpp
+         Scanner.cpp
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\scanner.cpp(50): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\scanner.cpp(69): warning C4018: '<' : signed/unsigned mismatch
+         Rule.cpp
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\rule.cpp(14): warning C4018: '<' : signed/unsigned mismatch
+         Predicate.cpp
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\predicate.cpp(19): warning C4018: '<' : signed/unsigned mismatch
+         Parser.cpp
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\parser.cpp(189): warning C4018: '<' : signed/unsigned mismatch
+         Parameter.cpp
+         main.cpp
+         DatalogProgram.cpp
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\datalogprogram.cpp(18): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\datalogprogram.cpp(22): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\datalogprogram.cpp(26): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\datalogprogram.cpp(30): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\parameter.cpp(54): warning C4715: 'Parameter::getName' : not all control paths return a value
+     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\parameter.cpp(60): warning C4715: 'Parameter::getValue' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.lib" /MACHINE:X86 Debug\DatalogProgram.obj
+         Debug\main.obj
+         Debug\Parameter.obj
+         Debug\Parser.obj
+         Debug\Predicate.obj
+         Debug\Rule.obj
+         Debug\Scanner.obj
+         Debug\Token.obj
+         Debug\Tokentype.obj
+         Debug\Util.obj
+         Project 3 - Interpretter.vcxproj -> C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.exe
+     1>Done Building Project "C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Project 3 - Interpretter\Project 3 - Interpretter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.67
