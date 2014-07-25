@@ -14,4 +14,4 @@ Rules:
 Queries:
   HasSameAddress('Snoopy',Who)?
 
-s
+  Rules:
