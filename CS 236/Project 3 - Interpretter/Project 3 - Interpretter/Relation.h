@@ -16,7 +16,7 @@ public:
 	~Relation();
 	void select(int index, string value);
 	void select(int index1, int index2);
-	void project();
+	void project(vector<int> positions);
 	void rename(int index, string newCol);
 	string toString(Predicate query);
 };

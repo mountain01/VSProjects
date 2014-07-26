@@ -39,8 +39,24 @@ void Relation::select(int index1, int index2){
 	}
 }
 
-void Relation::project(){
-
+void Relation::project(vector<int> positions){
+	Scheme newScheme;
+	for (int i = 0; i < positions.size(); i++){
+		newScheme.names.push_back(myScheme.names[positions[i]]);
+	}
+	set<Tuple>::iterator iter = myTuples.begin();
+	set<Tuple> tempSet;
+	while (iter != myTuples.end()){
+		Tuple newTuple;
+		Tuple temp = *iter;
+		for (int i = 0; i < positions.size(); i++){
+			newTuple.push_back(temp[positions[i]]);
+		}
+		tempSet.insert(newTuple);
+		iter++;
+	}
+	myScheme = newScheme;
+	myTuples = tempSet;
 }
 
 void Relation::rename(int index, string newCol){
