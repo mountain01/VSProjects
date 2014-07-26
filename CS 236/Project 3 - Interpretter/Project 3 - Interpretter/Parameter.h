@@ -20,6 +20,7 @@ public:
 	void setValue(string newValue);
 	string getName();
 	string getValue();
+	bool isName();
 
 };
 

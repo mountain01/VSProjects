@@ -5,16 +5,9 @@ Database::Database()
 {
 }
 
-Database::Database(string fileName){
-	Parser newParser(fileName);
-	newParser.parse();
-	makeDB(newParser.getDP());
-}
 
-Database::Database(char* filename){
-	Parser newParser(filename);
-	newParser.parse();
-	makeDB(newParser.getDP());
+Database::Database(DatalogProgram dp){
+	makeDB(dp);
 }
 
 

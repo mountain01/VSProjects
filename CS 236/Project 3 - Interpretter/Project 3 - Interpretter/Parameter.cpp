@@ -58,3 +58,7 @@ string Parameter::getValue(){
 		return value;
 	}
 }
+
+bool Parameter::isName(){
+	return hasName;
+}

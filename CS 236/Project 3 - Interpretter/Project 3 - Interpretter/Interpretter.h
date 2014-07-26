@@ -7,8 +7,13 @@ class Interpretter
 {
 private:
 	Database myDb;
+	DatalogProgram myDP;
+	string result;
 public:
 	Interpretter();
+	Interpretter(char* filename);
 	~Interpretter();
+	void testQueries();
+	string toString();
 };
 

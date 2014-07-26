@@ -6,13 +6,11 @@ using namespace std;
 
 class Database
 {
-private:
+public:
 	map<string, Relation> myRelations;
 
-public:
 	Database();
-	Database(string fileName);
-	Database(char* filename);
+	Database(DatalogProgram dp);
 	~Database();
 
 	void makeDB(DatalogProgram dp);
