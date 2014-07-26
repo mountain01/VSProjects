@@ -17,7 +17,7 @@ public:
 	void select(int index, string value);
 	void select(int index1, int index2);
 	void project();
-	void rename(string oldCol, string newCol);
+	void rename(int index, string newCol);
 	string toString(Predicate query);
 };
 

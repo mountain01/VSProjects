@@ -1,33 +1,9 @@
-﻿Build started 7/26/2014 2:19:44 AM.
+﻿Build started 7/26/2014 2:39:43 AM.
      1>Project "C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Project 3 - Interpretter\Project 3 - Interpretter.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Interpretter.cpp Relation.cpp
-         Relation.cpp
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\relation.cpp(47): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\relation.cpp(66): warning C4018: '<' : signed/unsigned mismatch
-         Interpretter.cpp
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\interpretter.cpp(24): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 3 - interpretter\project 3 - interpretter\interpretter.cpp(26): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.lib" /MACHINE:X86 Debug\Database.obj
-         Debug\DatalogProgram.obj
-         Debug\Interpretter.obj
-         Debug\main.obj
-         Debug\Parameter.obj
-         Debug\Parser.obj
-         Debug\Predicate.obj
-         Debug\Relation.obj
-         Debug\Rule.obj
-         Debug\Scanner.obj
-         Debug\Scheme.obj
-         Debug\Token.obj
-         Debug\Tokentype.obj
-         Debug\Tuple.obj
-         Debug\Util.obj
+     1>Link:
          Project 3 - Interpretter.vcxproj -> C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Debug\Project 3 - Interpretter.exe
      1>Done Building Project "C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 3 - Interpretter\Project 3 - Interpretter\Project 3 - Interpretter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.39
+Time Elapsed 00:00:00.06

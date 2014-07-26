@@ -43,12 +43,8 @@ void Relation::project(){
 
 }
 
-void Relation::rename(string oldCol, string newCol){
-	for (int i = 0; i < myScheme.names.size(); i++){
-		if (myScheme.names[i] == oldCol){
-			myScheme.names[i] = newCol;
-		}
-	}
+void Relation::rename(int index, string newCol){
+	myScheme.names[index] = newCol;
 }
 
 string Relation::toString(Predicate query){
@@ -69,7 +65,7 @@ string Relation::toString(Predicate query){
 				iter++;
 				result = result.substr(0, (result.length() - 2)) + "\n  ";
 			}
-			result = result.substr(0, result.length() - 4);
+			result = result.substr(0, result.length() - 3);
 		}
 	}
 	return result;
