@@ -10,4 +10,5 @@ Rules:
 
 Queries:
   bob('a',B)?
+  bob(alpijes,'b')?
 
