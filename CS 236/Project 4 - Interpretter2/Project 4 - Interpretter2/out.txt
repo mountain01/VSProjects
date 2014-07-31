@@ -1,4 +1,0 @@
-bob('a',B)? Yes(1)
-  B='b'
-bob(alpijes,'b')? Yes(1)
-  alpijes='a'

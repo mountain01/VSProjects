@@ -18,6 +18,7 @@ public:
 	void select(int index1, int index2);
 	void project(vector<int> positions);
 	void rename(int index, string newCol);
+	Relation join(Relation rel);
 	string toString(Predicate query);
 };
 

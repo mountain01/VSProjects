@@ -14,6 +14,7 @@ public:
 	~Database();
 
 	void makeDB(DatalogProgram dp);
+	void addRules(DatalogProgram dp);
 	void addRelations(DatalogProgram dp);
 	void addTuples(DatalogProgram dp);
 };

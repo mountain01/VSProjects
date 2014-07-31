@@ -16,6 +16,32 @@ Relation::~Relation()
 {
 }
 
+Relation Relation::join(Relation rel){
+	//make new scheme
+	Scheme newScheme(myScheme, rel.myScheme);
+	Relation newRelation;
+	newRelation.myScheme = newScheme;
+	return newRelation;
+
+
+
+	/*make the scheme s for the result relation
+		(combine r1's scheme with r2's scheme)
+
+		make a new empty relation r using scheme s
+
+	for each tuple t1 in r1
+	for each tuple t2 in r2
+
+	if t1 and t2 can join
+		join t1 and t2 to make tuple t
+		add tuple t to relation r
+		end if
+
+		end for
+		end for*/
+}
+
 void Relation::select(int index, string value){
 	set<Tuple>::iterator iter = myTuples.begin();
 	while (iter != myTuples.end()){
