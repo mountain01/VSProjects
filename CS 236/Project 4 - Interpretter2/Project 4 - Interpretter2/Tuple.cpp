@@ -11,6 +11,10 @@ Tuple::Tuple(Predicate fact){
 	}
 }
 
+Tuple::Tuple(Scheme newScheme, set<Tuple> r1Tup, set<Tuple> r2Tup){
+
+}
+
 
 Tuple::~Tuple()
 {

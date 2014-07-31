@@ -47,6 +47,7 @@ void Interpretter::testQueries(){
 }
 
 string Interpretter::toString(){
+	result += "Converged after "+itos(myDb.ruleIterations)+" passes through the Rules.\n";
 	testQueries();
 	return result;
 }

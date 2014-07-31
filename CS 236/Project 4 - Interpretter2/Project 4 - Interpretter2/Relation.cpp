@@ -21,6 +21,11 @@ Relation Relation::join(Relation rel){
 	Scheme newScheme(myScheme, rel.myScheme);
 	Relation newRelation;
 	newRelation.myScheme = newScheme;
+	string newName = "";
+	for (int i = 0; i < newScheme.names.size(); i++){
+		newName += newScheme.names[i];
+	}
+	newRelation.name = newName;
 	return newRelation;
 
 
