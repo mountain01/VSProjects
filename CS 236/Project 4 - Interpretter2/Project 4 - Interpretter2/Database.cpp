@@ -53,18 +53,8 @@ Tuple Database::joinTuple(set<pair<int, int>> pairs, Tuple t1, Tuple t2){
 	for (int i = 0; i<t1.size(); i++){
 		newTuple.push_back(t1[i]);
 	}
-	for (int i = 0; i<t2.size(); i++){
-		if (pairs.size() >0){
-			for (set<pair<int, int>>::iterator iter = pairs.begin(); iter != pairs.end(); iter++){
-				pair<int, int> temp = *iter;
-				if (i != temp.second){
-					newTuple.push_back(t2[i]);
-				}
-			}
-		}
-		else {
-			newTuple.push_back(t2[i]);
-		}
+	for (auto i : t2){
+		newTuple.push_back(i);
 	}
 	return newTuple;
 }
@@ -117,30 +107,34 @@ Relation Database::ruleRelation(Predicate pred){
 	return temp;
 }
 
+void Database::interpretRule(Rule rule){
+	Relation r1 = ruleRelation(rule.body[0]);
+	if (rule.body.size() > 1){
+		for (int k = 1; k < rule.body.size(); k++){
+			Relation r2 = ruleRelation(rule.body[k]);
+			set<pair<int, int>> myIndexes = sameIndex(r1, r2);
+			set<Tuple> r1Tup = r1.myTuples;
+			set<Tuple> r2Tup = r2.myTuples;
+			r1 = r1.join(r2);
+
+			r1.myTuples = joinTuples(r1Tup, r2Tup, myIndexes);
+
+		}
+	}
+	r1.project(getProjectIndex(rule.head, r1));
+	insertNewTuples(rule.head.name, r1);
+}
+
 void Database::addRules(DatalogProgram dp){
 	int oldSize = 0;
-	while (oldSize != getSize()){
+	do{
 		oldSize = getSize();
 		ruleIterations++;
 		for (int i = 0; i < dp.rules.size(); i++){
 			Rule rule = dp.rules[i];
-			Relation r1 = ruleRelation(rule.body[0]);
-			if (rule.body.size() > 1){
-				for (int k = 1; k < rule.body.size(); k++){
-					Relation r2 = ruleRelation(rule.body[k]);
-					set<pair<int, int>> myIndexes = sameIndex(r1, r2);
-					set<Tuple> r1Tup = r1.myTuples;
-					set<Tuple> r2Tup = r2.myTuples;
-					r1 = r1.join(r2);
-
-					r1.myTuples = joinTuples(r1Tup, r2Tup, myIndexes);
-
-				}
-			}
-			r1.project(getProjectIndex(rule.head, r1));
-			insertNewTuples(rule.head.name, r1);
+			interpretRule(rule);
 		}
-	}
+	} while (oldSize != getSize());
 }
 
 void Database::insertNewTuples(string name, Relation rel){

@@ -25,6 +25,7 @@ public:
 	vector<int> getProjectIndex(Predicate ruleHead, Relation rel);
 	Relation ruleRelation(Predicate pred);
 	void insertNewTuples(string name, Relation rel);
+	void interpretRule(Rule rule);
 	int getSize();
 };
 
