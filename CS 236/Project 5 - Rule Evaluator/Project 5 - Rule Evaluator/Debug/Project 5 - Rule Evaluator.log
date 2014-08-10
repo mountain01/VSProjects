@@ -1,42 +1,9 @@
-﻿Build started 8/10/2014 2:43:33 PM.
+﻿Build started 8/10/2014 3:25:29 PM.
      1>Project "C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 5 - Rule Evaluator\Project 5 - Rule Evaluator\Project 5 - Rule Evaluator.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Database.cpp Graph.cpp Node.cpp
-         Node.cpp
-         Graph.cpp
-         Database.cpp
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(30): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(31): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(55): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(78): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(79): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(100): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(115): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(135): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(150): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matt\documents\visual studio 2013\projects\cs 236\project 5 - rule evaluator\project 5 - rule evaluator\database.cpp(158): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 5 - Rule Evaluator\Debug\Project 5 - Rule Evaluator.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 5 - Rule Evaluator\Debug\Project 5 - Rule Evaluator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 5 - Rule Evaluator\Debug\Project 5 - Rule Evaluator.lib" /MACHINE:X86 Debug\Database.obj
-         Debug\DatalogProgram.obj
-         Debug\Graph.obj
-         Debug\Interpretter.obj
-         Debug\main.obj
-         Debug\Node.obj
-         Debug\Parameter.obj
-         Debug\Parser.obj
-         Debug\Predicate.obj
-         Debug\Relation.obj
-         Debug\Rule.obj
-         Debug\Scanner.obj
-         Debug\Scheme.obj
-         Debug\Token.obj
-         Debug\Tokentype.obj
-         Debug\Tuple.obj
-         Debug\Util.obj
+     1>Link:
          Project 5 - Rule Evaluator.vcxproj -> C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 5 - Rule Evaluator\Debug\Project 5 - Rule Evaluator.exe
      1>Done Building Project "C:\Users\Matt\Documents\Visual Studio 2013\Projects\CS 236\Project 5 - Rule Evaluator\Project 5 - Rule Evaluator\Project 5 - Rule Evaluator.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.59
+Time Elapsed 00:00:00.06

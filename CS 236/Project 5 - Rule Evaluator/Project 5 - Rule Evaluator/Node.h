@@ -18,5 +18,6 @@ public:
 	Node(Rule rule, string newId, vector<Rule> rules);
 	~Node();
 	void setAdjacent(Predicate pred, vector<Rule> rules);
+	string toString();
 };
 

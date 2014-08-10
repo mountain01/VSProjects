@@ -34,3 +34,12 @@ void Node::setAdjacent(Predicate pred, vector<Rule> rules){
 		}
 	}
 }
+
+string Node::toString(){
+	string result = "  ";
+	result += id + ":";
+	for (auto neighbor : neighbors){
+		result += " " + neighbor;
+	}
+	return result + "\n";
+}

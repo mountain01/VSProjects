@@ -13,6 +13,8 @@ Interpretter::Interpretter(char* filename){
 	Database newDB(myDP);
 	myDb = newDB;
 	result = "";
+	Graph newGraph(myDP);
+	myGraph = newGraph;
 }
 
 
@@ -47,7 +49,7 @@ void Interpretter::testQueries(){
 }
 
 string Interpretter::toString(){
-	result += "Converged after "+itos(myDb.ruleIterations)+" passes through the Rules.\n";
-	testQueries();
+	result += "Dependancy Graph \n" + myGraph.toString();
+	//testQueries();
 	return result;
 }

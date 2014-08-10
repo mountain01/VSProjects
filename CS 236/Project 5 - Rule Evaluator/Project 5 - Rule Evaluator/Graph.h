@@ -10,5 +10,6 @@ public:
 	Graph();
 	Graph(DatalogProgram dp);
 	~Graph();
+	string toString();
 };
 

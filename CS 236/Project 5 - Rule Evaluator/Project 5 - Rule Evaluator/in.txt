@@ -1,31 +1,20 @@
-Schemes:
 
-combinations(a,b,c,d)
-be(b,e)
-ce(c,e)
-bcd(b,c,d)
-ade(a,d,e)
-chars(all)
-shift(a,b,c,d)
+
+Schemes:
+Parent(p,c)
+Sibling(a,b)
+Ancestor(x,y)
 
 Facts:
-
-shift('a','b','c','d').
+Parent('bob','ned').
+Parent('jim','bob').
+Sibling('sue','ned').
 
 Rules:
-
-chars(a) :- shift(a,b,c,d).
-be(b,e) :- chars(b),chars(e).
-ce(c,e):-chars(c),chars(e).
-bcd(b,c,d):-chars(b),chars(c),chars(d).
-ade(a,d,e):-chars(a),chars(d),chars(e).
-combinations(a,b,c,d):-be(b,d),ce(c,d),bcd(b,c,d),ade(a,b,c).
-shift(a,b,c,d):-shift(d,a,b,c).
+Sibling(x,y):-Sibling(y,x).
+Ancestor(x,y):-Ancestor(x,z),Parent(z,y).
+Ancestor(x,y):-Parent(x,y).
 
 Queries:
-
-shift(a,b,c,d)?
-chars(a)?
-be(b,e)?
-ade(a,d,e)?
-combinations(a,b,c,d)?
+Ancestor(x,'ned')?
+Sibling('ned','sue')?

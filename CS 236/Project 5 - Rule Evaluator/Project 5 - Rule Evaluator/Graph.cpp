@@ -24,3 +24,11 @@ Graph::Graph(DatalogProgram dp){
 Graph::~Graph()
 {
 }
+
+string Graph::toString(){
+	string result = "";
+	for (auto node : Nodes){
+		result += node.second.toString();
+	}
+	return result;
+}
