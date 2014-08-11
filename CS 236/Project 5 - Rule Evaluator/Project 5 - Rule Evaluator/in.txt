@@ -1,20 +1,18 @@
 
 
 Schemes:
-Parent(p,c)
-Sibling(a,b)
-Ancestor(x,y)
+bob(x)
+jim(x)
+joe(x)
 
 Facts:
-Parent('bob','ned').
-Parent('jim','bob').
-Sibling('sue','ned').
+joe('4').
+jim('2').
+bob('1').
 
 Rules:
-Sibling(x,y):-Sibling(y,x).
-Ancestor(x,y):-Ancestor(x,z),Parent(z,y).
-Ancestor(x,y):-Parent(x,y).
+jim(x) :- bob(x).
 
 Queries:
-Ancestor(x,'ned')?
-Sibling('ned','sue')?
+bob(x)?
+
