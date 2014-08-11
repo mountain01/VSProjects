@@ -156,7 +156,7 @@ bool Interpretter::backEdges(){
 }
 
 string Interpretter::toString(){
-	result += "Dependency Graph \n" + myGraph.toString() + "\n";
+	result += "Dependency Graph\n" + myGraph.toString() + "\n";
 	testQueries();
 	return result;
 }
